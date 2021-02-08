@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<!-- handlebars -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <form class="form-inline">
+
+                          <input id="scrivi" class="form-control mr-sm-2" type="search" placeholder="Digitare qui.." aria-label="Search">
+
+                        
+                        </form>
+                      </nav>
+                </div>
+            </div>
+        </div>
+       
+    </header>
+
+    
+    <div class="film-container container">
+        
+       
+    </div>
+
+    <script id="entry-template" type="text/x-handlebars-template">
+
+            <div class="film" data-title="{{title}}">
+
+                           
+                    <img class="copertina" src= "{{{cover}}}">
+
+                        <h1 class="title">{{title}}</h1>
+
+                        <h3>{{year}}</h3>
+                        <h5 class="votazione">Avg imdbRating:{{{stelline}}}</h5>
+                        <p class="nd"></p>
+                        <br>
+                        <p>Vote on the back <i class="fas fa-arrow-circle-right"></i></p>
+                     
+
+                    
+                    <div class="overlay">
+                        <span ><b>Language :</b> {{{language}}}</span>
+                            <br>
+                            <br>
+                            <span><b>Actors :</b> {{{actors}}}</span>
+                            <p>N° click for vote</p>
+                            <br>
+                            <span class="conteggio"></span>
+                            <br>
+                            <span class="avg"></span>
+                            <br>
+                            <br>
+                             <button id="premere">Vote!</button>
+                            <br>
+                            <br>
+                           
+                             <img class="backimg" src= "{{{cover2}}}" >
+                            
+                                
+                        
+                   </div>
+
+              
+             </div>
+
+      </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: blanchedalmond;
+}
+.film-container {
+    width: 1070px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.copertina  {
+    height:220px;
+    width:100%;
+    padding: 20px;
+
+}
+.film{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: rgb(52,58,64);
+    min-height: 620px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid goldenrod;
+    cursor: pointer;
+}
+
+#gold{
+    color: goldenrod;
+}
+
+.overlay {
+    position: absolute;
+    display:none;
+    background-color: rgb(36,42,54);
+    min-height: 620px;
+    width: 300px;
+    border: 2px solid #330000;
+    border-radius: 10px;
+    z-index: 99;
+    text-align: center;
+
+}
+.backimg{
+    padding: 20px;
+    height:200px;
+    width: 100%;
+}
+
+
